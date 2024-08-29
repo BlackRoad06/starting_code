@@ -9,7 +9,7 @@ import {Link, useSearchParams} from "react-router-dom";
 export default function Articles () {
   const articles = useSelector(selectArticles);
 
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
 
   // Grab URLSearchParams object from useSearchParams hook
   // Get the queryParams from object returned from useSearchParams and set to `title`
